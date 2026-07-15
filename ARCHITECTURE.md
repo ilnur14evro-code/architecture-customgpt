@@ -86,7 +86,8 @@ ORCHESTRATOR никогда:
 1. Запустить Writer.
 2. Writer создает первую версию поста.
 3. Critic проверяет текст.
-4. Если Critic вернул статус `REVISION_REQUIRED` — передать Writer замечания Critic.
+4. Если Critic вернул статус REVISION_REQUIRED —
+передать Writer замечания, полученные от Critic.
 5. Writer дорабатывает текст на основании замечаний Critic.
 6. Повторять цикл Writer ⇄ Critic.
 7. Если Critic вернул статус `APPROVED` — завершить Workflow и вернуть результат ORCHESTRATOR.
